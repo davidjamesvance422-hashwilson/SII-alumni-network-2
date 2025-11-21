@@ -1,0 +1,506 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28300\viewh15800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="zh-CN">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u19996 \u21271 \u36130 \u32463 \u22823 \u23398 \u33832 \u37324 \u22269 \u38469 \u23398 \u38498  - \u26657 \u21451 \u32593 \u32476 </title>\
+    \
+    <script src="https://cdn.tailwindcss.com"></script>\
+    \
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    colors: \{\
+                        'sii-navy': '#0A2C4D',\
+                        'sii-blue': '#007AFF',\
+                        'sii-gray': '#F5F5F7',\
+                        'sii-text': '#1D1D1F',\
+                    \},\
+                    fontFamily: \{\
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'PingFang SC', 'Source Han Sans', 'sans-serif'],\
+                    \},\
+                \},\
+            \},\
+        \}\
+    </script>\
+\
+    <style>\
+        body \{\
+            -webkit-font-smoothing: antialiased;\
+            -moz-osx-font-smoothing: grayscale;\
+        \}\
+        .page-content \{\
+            animation: fadeIn 0.5s ease-in-out;\
+        \}\
+        @keyframes fadeIn \{\
+            from \{ opacity: 0; transform: translateY(10px); \}\
+            to \{ opacity: 1; transform: translateY(0); \}\
+        \}\
+        /* \uc0\u23548 \u33322 \u26639 \u28608 \u27963 \u29366 \u24577  */\
+        .nav-link.active \{\
+            color: #007AFF; /* sii-blue */\
+        \}\
+    </style>\
+</head>\
+<body class="bg-white text-sii-text">\
+\
+    <header class="bg-sii-navy text-white p-4 sticky top-0 z-50 shadow-md">\
+        <nav class="container mx-auto flex justify-between items-center px-6">\
+            <div class="text-xl font-bold tracking-tight">\
+                <a href="#/" class="nav-link">SII Alumni Network</a>\
+            </div>\
+\
+            <div class="hidden md:flex space-x-8 items-center">\
+                <a href="#/" class="nav-link hover:text-sii-blue transition-colors">\uc0\u39318 \u39029 </a>\
+                <a href="#/alumni-list" class="nav-link hover:text-sii-blue transition-colors">\uc0\u26657 \u21451 \u21517 \u24405 </a>\
+                <a href="#/resources" class="nav-link hover:text-sii-blue transition-colors">\uc0\u36164 \u28304 \u20013 \u24515 </a>\
+                <a href="#/events" class="nav-link hover:text-sii-blue transition-colors">\uc0\u26657 \u21451 \u27963 \u21160 </a>\
+                <a href="#/register" class="nav-link border border-white rounded-full px-5 py-2 text-sm font-medium hover:bg-white hover:text-sii-navy transition-colors">\
+                    \uc0\u30331 \u24405  / \u39564 \u35777 \
+                </a>\
+            </div>\
+\
+            <button id="menu-btn" class="md:hidden p-2">\
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">\
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-8 6h8" />\
+                </svg>\
+            </button>\
+        </nav>\
+\
+        <div id="menu" class="hidden md:hidden absolute top-full left-0 w-full bg-sii-navy bg-opacity-95 backdrop-blur-sm shadow-xl">\
+            <div class="flex flex-col items-center space-y-4 py-8">\
+                <a href="#/" class="nav-link text-lg">\uc0\u39318 \u39029 </a>\
+                <a href="#/alumni-list" class="nav-link text-lg">\uc0\u26657 \u21451 \u21517 \u24405 </a>\
+                <a href="#/resources" class="nav-link text-lg">\uc0\u36164 \u28304 \u20013 \u24515 </a>\
+                <a href="#/events" class="nav-link text-lg">\uc0\u26657 \u21451 \u27963 \u21160 </a>\
+                <a href="#/register" class="nav-link mt-4 bg-sii-blue text-white rounded-full px-8 py-3 font-medium transition-colors">\
+                    \uc0\u30331 \u24405  / \u39564 \u35777 \
+                </a>\
+            </div>\
+        </div>\
+    </header>\
+\
+    <main>\
+\
+        <div id="page-home" class="page-content">\
+            <section class="container mx-auto px-6 py-28 md:py-48 text-center">\
+                <h1 class="text-5xl md:text-7xl font-extrabold text-sii-navy mb-5 tracking-tight">\
+                    \uc0\u36830 \u25509 \u20840 \u29699 \u33832 \u37324 \u20154 \u12290 \
+                </h1>\
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">\
+                    \uc0\u27426 \u36814 \u22238 \u21040 \u19996 \u21271 \u36130 \u32463 \u22823 \u23398 \u33832 \u37324 \u22269 \u38469 \u23398 \u38498 \u26657 \u21451 \u32593 \u32476 \u12290 \u21457 \u29616 \u26426 \u20250 \u65292 \u25299 \u23637 \u20154 \u33033 \u65292 \u20445 \u25345 \u32852 \u31995 \u12290 \
+                </p>\
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">\
+                    <a href="#/register" class="bg-sii-navy text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 shadow-lg transition-all transform hover:-translate-y-1">\
+                        \uc0\u31435 \u21363 \u21152 \u20837  / \u39564 \u35777 \
+                    </a>\
+                    <a href="#/alumni-list" class="text-sii-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-sii-blue/10 transition-all">\
+                        \uc0\u26597 \u30475 \u26657 \u21451 \u21517 \u24405  &gt;\
+                    </a>\
+                </div>\
+            </section>\
+\
+            <section class="bg-sii-gray py-24 md:py-32">\
+                <div class="container mx-auto px-6">\
+                    <h2 class="text-4xl font-bold text-center text-sii-navy mb-16">\
+                        \uc0\u20026 \u20320 \u32780 \u26469 \
+                    </h2>\
+                    <div class="grid md:grid-cols-3 gap-8">\
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform hover:scale-105">\
+                             <div class="bg-sii-blue/10 text-sii-blue p-3 rounded-full w-14 h-14 flex items-center justify-center mb-5">\
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.07a2.25 2.25 0 01-2.25 2.25H5.85a2.25 2.25 0 01-2.25-2.25v-4.07a2.25 2.25 0 012.25-2.25h12.15c1.24 0 2.25 1.01 2.25 2.25z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75V3.75m0 9V3.75m-4.5 9V3.75m0 9V3.75m9 9V3.75m0 9V3.75M3 10.05h18" /></svg>\
+                            </div>\
+                            <h3 class="text-2xl font-semibold mb-3 text-sii-navy">\uc0\u32844 \u19994 \u21457 \u23637 </h3>\
+                            <p class="text-gray-600 mb-5">\
+                                \uc0\u27983 \u35272 \u30001 \u26657 \u21451 \u29420 \u23478 \u21457 \u24067 \u30340 \u23454 \u20064 \u21644 \u20840 \u32844 \u24037 \u20316 \u23703 \u20301 \u65292 \u33719 \u21462 \u23453 \u36149 \u30340 \u20869 \u25512 \u26426 \u20250 \u12290 \
+                            </p>\
+                            <a href="#/resources" class="text-sii-blue font-medium hover:underline">\uc0\u27983 \u35272 \u32844 \u20301  &gt;</a>\
+                        </div>\
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform hover:scale-105">\
+                            <div class="bg-sii-blue/10 text-sii-blue p-3 rounded-full w-14 h-14 flex items-center justify-center mb-5">\
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 00-12 0m12 0a9.094 9.094 0 00-12 0m12 0v-2.28a9.094 9.094 0 00-12 0v2.28m12 0A9.09 9.09 0 0112 21.75a9.09 9.09 0 01-6-3.03m12 0c0-3.314-2.686-6-6-6s-6 2.686-6 6m12 0c0 3.314-2.686 6-6 6s-6-2.686-6-6m6 0c.57 0 1.12.08 1.64.23m0 0a5.98 5.98 0 014.16 2.8M12 12a3 3 0 100-6 3 3 0 000 6z" /></svg>\
+                            </div>\
+                            <h3 class="text-2xl font-semibold mb-3 text-sii-navy">\uc0\u25299 \u23637 \u20154 \u33033 </h3>\
+                            <p class="text-gray-600 mb-5">\
+                                \uc0\u26597 \u25214 \u19981 \u21516 \u34892 \u19994 \u21644 \u22478 \u24066 \u30340 SII\u26657 \u21451 \u12290 \u27599 \u19968 \u27425 \u36830 \u25509 \u65292 \u37117 \u21487 \u33021 \u26159 \u26032 \u31687 \u31456 \u30340 \u24320 \u22987 \u12290 \
+                            </p>\
+                            <a href="#/alumni-list" class="text-sii-blue font-medium hover:underline">\uc0\u25628 \u32034 \u26657 \u21451  &gt;</a>\
+                        </div>\
+                        <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform hover:scale-105">\
+                            <div class="bg-sii-blue/10 text-sii-blue p-3 rounded-full w-14 h-14 flex items-center justify-center mb-5">\
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" /></svg>\
+                            </div>\
+                            <h3 class="text-2xl font-semibold mb-3 text-sii-navy">\uc0\u26356 \u26032 \u20449 \u24687 </h3>\
+                            <p class="text-gray-600 mb-5">\
+                                \uc0\u26356 \u26032 \u20320 \u30340 \u32844 \u19994 \u21160 \u24577 \u21644 \u32852 \u31995 \u26041 \u24335 \u65292 \u35753 \u27597 \u26657 \u30340 \u36164 \u28304 \u21644 \u26132 \u26085 \u30340 \u21516 \u31383 \u33021 \u20027 \u21160 \u25214 \u21040 \u20320 \u12290 \
+                            </p>\
+                            <a href="#/register" class="text-sii-blue font-medium hover:underline">\uc0\u26356 \u26032 \u25105 \u30340 \u36164 \u26009  &gt;</a>\
+                        </div>\
+                    </div>\
+                </div>\
+            </section>\
+\
+            <section class="bg-white py-24 md:py-32">\
+                <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">\
+                    <div>\
+                        <img src="https://placehold.co/600x450/0A2C4D/FFFFFF?text=\uc0\u26657 \u21451 \u39118 \u37319 " alt="\u26657 \u21451 \u39118 \u37319 \u21344 \u20301 \u22270 " class="rounded-2xl shadow-xl w-full h-auto">\
+                    </div>\
+                    <div class="md:pl-10">\
+                        <p class="text-2xl md:text-3xl font-medium text-gray-800 italic mb-6">\
+                            "\uc0\u33832 \u37324 \u19981 \u20165 \u26159 \u23398 \u20064 \u30340 \u22320 \u26041 \u65292 \u26356 \u26159 \u19968 \u20010 \u36215 \u28857 \u12290 \u36890 \u36807 \u26657 \u21451 \u32593 \u32476 \u65292 \u25105 \u25214 \u21040 \u20102 \u25105 \u30340 \u31532 \u19968 \u20221 \u23454 \u20064 \u65292 \u20063 \u32467 \u35782 \u20102 \u29616 \u22312 \u21019 \u19994 \u30340 \u20249 \u20276 \u12290 "\
+                        </p>\
+                        <p class="text-lg font-semibold text-sii-navy">\
+                            \'97 \uc0\u24352 \u19977 , 2018\u32423  \u37329 \u34701 \u23398 \
+                        </p>\
+                        <p class="text-gray-600">\
+                            \uc0\u29616 \u23601 \u32844 \u20110  [\u26576 \u30693 \u21517 \u37329 \u34701 \u31185 \u25216 \u20844 \u21496 ]\
+                        </p>\
+                    </div>\
+                </div>\
+            </section>\
+\
+            <section class="bg-sii-navy text-white py-24 md:py-32 text-center">\
+                <div class="container mx-auto px-6">\
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8">\
+                        \uc0\u20320 \u65292 \u26159 \u33832 \u37324 \u25925 \u20107 \u30340 \u19979 \u19968 \u31456 \u12290 \
+                    </h2>\
+                    <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">\
+                        \uc0\u20165 \u38656 \u20004 \u20998 \u38047 \u65292 \u30331 \u35760 \u20320 \u30340 \u20449 \u24687 \u65292 \u37325 \u26032 \u36830 \u25509 \u20840 \u29699 SII\u32593 \u32476 \u12290 \
+                    </p>\
+                    <a href="#/register" class="bg-white text-sii-navy px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 shadow-lg transition-all transform hover:-translate-y-1">\
+                        \uc0\u31435 \u21363 \u30331 \u35760 \u20320 \u30340 \u20449 \u24687 \
+                    </a>\
+                </div>\
+            </section>\
+        </div>\
+\
+        <div id="page-resources" class="page-content hidden">\
+            <div class="bg-white py-24 md:py-32">\
+                <div class="container mx-auto px-6">\
+                    <h1 class="text-5xl font-extrabold text-sii-navy mb-4">\uc0\u32844 \u19994 \u21457 \u23637 \u20013 \u24515 </h1>\
+                    <p class="text-xl text-gray-600 mb-12">\uc0\u27983 \u35272 \u30001 \u20840 \u29699 \u33832 \u37324 \u26657 \u21451 \u21457 \u24067 \u30340 \u29420 \u23478 \u26426 \u20250 \u12290 </p>\
+\
+                    <div class="mb-10 flex flex-wrap gap-4 items-center">\
+                        <span class="font-medium text-gray-700">\uc0\u31579 \u36873 :</span>\
+                        <button class="bg-sii-blue text-white px-4 py-2 rounded-full text-sm">\uc0\u20840 \u37096 </button>\
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">\uc0\u23454 \u20064 </button>\
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">\uc0\u20840 \u32844 </button>\
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">\uc0\u28145 \u22323 </button>\
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">\uc0\u19978 \u28023 </button>\
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">\uc0\u37329 \u34701 </button>\
+                        <a href="#" class="ml-auto bg-sii-navy text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90">\
+                            + \uc0\u21457 \u24067 \u19968 \u20010 \u26032 \u26426 \u20250 \
+                        </a>\
+                    </div>\
+\
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">\
+                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">\
+                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">\uc0\u25968 \u25454 \u20998 \u26512 \u23454 \u20064 \u29983 </h3>\
+                            <p class="text-lg font-medium text-gray-700 mb-3">\uc0\u23383 \u33410 \u36339 \u21160 </p>\
+                            <div class="flex flex-wrap gap-2 mb-4">\
+                                <span class="text-xs font-medium bg-sii-blue/10 text-sii-blue px-3 py-1 rounded-full">\uc0\u23454 \u20064 </span>\
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">\uc0\u36828 \u31243 </span>\
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">\uc0\u28145 \u22323 </span>\
+                            </div>\
+                            <p class="text-sm text-gray-500 mb-5">\uc0\u21457 \u24067 \u20110 : 3\u22825 \u21069 </p>\
+                            <p class="text-sm text-gray-600 mb-5">\
+                                <span class="font-medium">\uc0\u26469 \u28304 :</span> \u26446 \u22235  (2019\u32423  \u26657 \u21451 )\
+                            </p>\
+                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">\
+                                \uc0\u26597 \u30475 \u35814 \u24773 \u24182 \u32852 \u31995 \
+                            </a>\
+                        </div>\
+                        \
+                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">\
+                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">\uc0\u37329 \u34701 \u31649 \u22521 \u29983  (\u20840 \u32844 )</h3>\
+                            <p class="text-lg font-medium text-gray-700 mb-3">\
+                                [\uc0\u26576 \u30693 \u21517 \u38134 \u34892 ]\
+                            </p>\
+                            <div class="flex flex-wrap gap-2 mb-4">\
+                                <span class="text-xs font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full">\uc0\u20840 \u32844 </span>\
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">\uc0\u19978 \u28023 </span>\
+                            </div>\
+                            <p class="text-sm text-gray-500 mb-5">\uc0\u21457 \u24067 \u20110 : 1\u22825 \u21069 </p>\
+                            <p class="text-sm text-gray-600 mb-5">\
+                                <span class="font-medium">\uc0\u26469 \u28304 :</span> \u29579 \u20116  (2017\u32423  \u26657 \u21451 )\
+                            </p>\
+                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">\
+                                \uc0\u26597 \u30475 \u35814 \u24773 \u24182 \u32852 \u31995 \
+                            </a>\
+                        </div>\
+\
+                        <div class="bg-sii-gray border border-dashed border-gray-300 p-6 rounded-2xl flex items-center justify-center text-center text-gray-500 hover:border-sii-blue hover:text-sii-blue transition-colors">\
+                            <div>\
+                                <h3 class="text-lg font-medium">\uc0\u26356 \u22810 \u26426 \u20250 </h3>\
+                                <p class="text-sm">\uc0\u27491 \u22312 \u31561 \u24453 \u26657 \u21451 \u21457 \u24067 ...</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+        \
+        <div id="page-register" class="page-content hidden">\
+            <div class="bg-sii-gray py-24 md:py-32 min-h-screen">\
+                <div class="container mx-auto px-6">\
+                    \
+                    <div class="max-w-md mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl text-center">\
+                        <h1 class="text-4xl font-extrabold text-sii-navy mb-4">\uc0\u26657 \u21451 \u36523 \u20221 \u26680 \u39564 </h1>\
+                        <p class="text-lg text-gray-600 mb-10">\
+                            \uc0\u35831 \u36755 \u20837 \u39033 \u30446 \u28436 \u31034 \u21475 \u20196 \u20197 \u35775 \u38382 \u26657 \u21451 \u21517 \u24405 \u12290 \
+                        </p>\
+\
+                        <input type="password" id="passphraseInput" placeholder="\uc0\u35831 \u36755 \u20837 \u21475 \u20196 " \
+                               class="w-full px-4 py-3 mb-6 rounded-lg border border-gray-300 shadow-sm focus:border-sii-blue focus:ring-sii-blue text-lg" required>\
+                               \
+                        <button onclick="verifyPassphrase()" \
+                                class="w-full bg-sii-navy text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 shadow-lg transition-all transform hover:-translate-y-1">\
+                            \uc0\u36827 \u20837 \u26657 \u21451 \u21517 \u24405 \
+                        </button>\
+                        <p id="message" class="mt-4 font-medium"></p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+\
+        <div id="page-alumni-list" class="page-content hidden">\
+            <div class="bg-white py-24 md:py-32">\
+                <div class="container mx-auto px-6">\
+                    <h1 class="text-5xl font-extrabold text-sii-navy mb-4">\uc0\u26657 \u21451 \u21517 \u24405 </h1>\
+                    <p class="text-xl text-gray-600 mb-12">\uc0\u23637 \u31034 \u24050 \u35748 \u35777 \u26657 \u21451 \u30340 \u20844 \u24320 \u20449 \u24687 \u12290 **\u65288 \u28436 \u31034  API \u25968 \u25454 \u26368 \u23567 \u21270 \u21407 \u21017 \u65289 **</p>\
+\
+                    <div class="flex mb-10">\
+                        <input type="text" id="search-input" placeholder="\uc0\u25353 \u22995 \u21517 \u12289 \u20844 \u21496 \u25110 \u32844 \u20301 \u25628 \u32034 ..." \
+                               class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:border-sii-blue focus:ring-sii-blue text-lg" />\
+                        <button onclick="filterAlumni()" \
+                                class="bg-sii-blue text-white px-6 py-3 rounded-r-lg text-lg font-semibold hover:bg-sii-blue/90 transition-colors">\
+                            \uc0\u25628 \u32034 \
+                        </button>\
+                    </div>\
+\
+                    <div id="alumni-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">\
+                        </div>\
+                </div>\
+            </div>\
+        </div>\
+\
+\
+        <div id="page-events" class="page-content hidden">\
+             <div class="bg-white py-24 md:py-32 text-center">\
+                <h1 class="text-4xl font-bold text-sii-navy">\uc0\u26657 \u21451 \u27963 \u21160 </h1>\
+                <p class="text-lg text-gray-600 mt-4">\uc0\u39029 \u38754 \u24314 \u35774 \u20013 ...</p>\
+             </div>\
+        </div>\
+        <div id="page-about" class="page-content hidden">\
+             <div class="bg-white py-24 md:py-32 text-center">\
+                <h1 class="text-4xl font-bold text-sii-navy">\uc0\u20851 \u20110 \u25105 \u20204 </h1>\
+                <p class="text-lg text-gray-600 mt-4">\uc0\u39029 \u38754 \u24314 \u35774 \u20013 ...</p>\
+             </div>\
+        </div>\
+\
+\
+    </main>\
+\
+    <footer class="bg-sii-navy text-gray-300 py-20">\
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">\
+            <div>\
+                <h4 class="text-white text-lg font-semibold mb-4">SII \uc0\u26657 \u21451 \u20250 </h4>\
+                <p class="text-sm text-gray-400">\uc0\u36830 \u25509 \u20840 \u29699 \u33832 \u37324 \u20154 \u12290 </p>\
+            </div>\
+            <div>\
+                <h5 class="text-white font-semibold mb-4">\uc0\u24555 \u36895 \u38142 \u25509 </h5>\
+                <ul class="space-y-2 text-sm">\
+                    <li><a href="http://sii.dufe.edu.cn/" target="_blank" class="hover:text-white">\uc0\u23398 \u38498 \u23448 \u32593 </a></li>\
+                    <li><a href="http://www.dufe.edu.cn/" target="_blank" class="hover:text-white">\uc0\u19996 \u36130 \u23448 \u32593 </a></li>\
+                </ul>\
+            </div>\
+            <div>\
+                <h5 class="text-white font-semibold mb-4">\uc0\u36164 \u28304 </h5>\
+                <ul class="space-y-2 text-sm">\
+                    <li><a href="#/resources" class="hover:text-white">\uc0\u23454 \u20064 /\u24037 \u20316 </a></li>\
+                    <li><a href="#/alumni-list" class="hover:text-white">\uc0\u26657 \u21451 \u21517 \u24405 </a></li>\
+                    <li><a href="#" class="hover:text-white">\uc0\u21457 \u24067 \u26426 \u20250 </a></li>\
+                </ul>\
+            </div>\
+            <div>\
+                <h5 class="text-white font-semibold mb-4">\uc0\u32852 \u31995 </h5>\
+                <ul class="space-y-2 text-sm">\
+                    <li><a href="#" class="hover:text-white">\uc0\u32852 \u31995 \u25105 \u20204 </a></li>\
+                    <li><a href="#" class="hover:text-white">\uc0\u38544 \u31169 \u25919 \u31574 </a></li>\
+                </ul>\
+            </div>\
+        </div>\
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">\
+            &copy; 2025 \uc0\u19996 \u21271 \u36130 \u32463 \u22823 \u23398 \u33832 \u37324 \u22269 \u38469 \u23398 \u38498 \u26657 \u21451 \u32593 \u32476 . All Rights Reserved.\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // ----------------------------------------------------\
+        // 1. \uc0\u38745 \u24577 \u25968 \u25454 \u21644 \u26680 \u24515 \u21151 \u33021 \
+        // ----------------------------------------------------\
+\
+        // \uc0\u27169 \u25311 \u30340 \u26657 \u21451 \u25968 \u25454  (\u21482 \u21253 \u21547 \u20844 \u24320 \u23383 \u27573 \u65292 \u28436 \u31034 \'93\u25968 \u25454 \u26368 \u23567 \u21270 \'94\u21407 \u21017 )\
+        const ALUMNI_DATA = [\
+            \{ name: "\uc0\u24352 \u34183 ", company: "\u33150 \u35759 \u31185 \u25216 ", title: "\u39640 \u32423 \u20135 \u21697 \u32463 \u29702 ", resource: ["\u32844 \u19994 \u21457 \u23637 \u21672 \u35810 ", "\u37329 \u34701 \u34892 \u19994 \u20154 \u33033 "] \},\
+            \{ name: "\uc0\u26446 \u26126 ", company: "\u26222 \u21326 \u27704 \u36947 ", title: "\u31246 \u21153 \u39038 \u38382 ", resource: ["\u34892 \u19994 \u27934 \u23519 ", "CPA\u32771 \u35797 \u32463 \u39564 "] \},\
+            \{ name: "\uc0\u29579 \u27915 ", company: "\u33258 \u20027 \u21019 \u19994 ", title: "CEO", resource: ["\u25237 \u36164 \u26426 \u20250 ", "\u24066 \u22330 \u33829 \u38144 \u21512 \u20316 "] \},\
+            \{ name: "\uc0\u21016 \u24605 \u38632 ", company: "\u20013 \u22269 \u38134 \u34892 ", title: "\u22269 \u38469 \u32467 \u31639 \u32463 \u29702 ", resource: ["\u22806 \u27719 \u19994 \u21153 \u25351 \u23548 "] \},\
+            \{ name: "\uc0\u36213 \u38647 ", company: "\u21326 \u20026 \u25216 \u26415 ", title: "\u36719 \u20214 \u24037 \u31243 \u24072 ", resource: ["\u25216 \u26415 \u20132 \u27969 ", "\u20869 \u25512 \u26426 \u20250 "] \},\
+        ];\
+\
+        // \uc0\u21475 \u20196 \u39564 \u35777 \u36923 \u36753 \
+        // \uc0\u55357 \u57000  \u24050 \u26356 \u26032 \u21475 \u20196 \u20026  Dufe\
+        const CORRECT_PASSPHRASE = "Dufe"; \
+        const ALUMNUS_PAGE_HASH = "#/alumni-list"; \
+\
+        function verifyPassphrase() \{\
+            const inputElement = document.getElementById('passphraseInput');\
+            const messageElement = document.getElementById('message');\
+            const input = inputElement ? inputElement.value : '';\
+\
+            if (input === CORRECT_PASSPHRASE) \{\
+                messageElement.textContent = "\uc0\u39564 \u35777 \u25104 \u21151 \u65281 \u27426 \u36814 \u36827 \u20837 \u26657 \u21451 \u21517 \u24405 \u12290 ";\
+                messageElement.style.color = "#34c759"; /* Green */\
+                // \uc0\u27169 \u25311 \u25480 \u26435 \u65292 \u36339 \u36716 \u21040 \u26657 \u21451 \u24405 \u39029 \u38754 \
+                setTimeout(() => \{\
+                    window.location.hash = ALUMNUS_PAGE_HASH;\
+                \}, 800);\
+            \} else \{\
+                messageElement.textContent = "\uc0\u21475 \u20196 \u38169 \u35823 \u65292 \u35831 \u26816 \u26597 \u36755 \u20837 \u12290 ";\
+                messageElement.style.color = "#ff3b30"; /* Red */\
+            \}\
+        \}\
+\
+        // \uc0\u28210 \u26579 \u26657 \u21451 \u21015 \u34920 \u21345 \u29255 \
+        function renderAlumni(data) \{\
+            const listElement = document.getElementById('alumni-list');\
+            if (!listElement) return;\
+\
+            listElement.innerHTML = ''; // \uc0\u28165 \u31354 \u29616 \u26377 \u20869 \u23481 \
+\
+            data.forEach(alumnus => \{\
+                const resourcesHtml = alumnus.resource.map(res => \
+                    `<span class="text-xs font-medium bg-sii-gray text-sii-text px-3 py-1 rounded-full">$\{res\}</span>`\
+                ).join(' ');\
+\
+                const card = document.createElement('div');\
+                card.className = 'bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow transform hover:scale-[1.01]';\
+                \
+                // \uc0\u28210 \u26579 \u21345 \u29255 \u20869 \u23481  (\u20351 \u29992  Tailwind class)\
+                card.innerHTML = `\
+                    <h2 class="text-xl font-semibold mb-2 text-sii-navy">$\{alumnus.name\}</h2>\
+                    <p class="text-base text-gray-700 mb-1"><strong>\uc0\u20844 \u21496 :</strong> $\{alumnus.company\}</p>\
+                    <p class="text-base text-gray-700 mb-4"><strong>\uc0\u32844 \u20301 :</strong> $\{alumnus.title\}</p>\
+                    <div class="resource pt-3 border-t border-gray-100">\
+                        <strong class="text-sm font-medium text-gray-600 block mb-2">\uc0\u21487 \u25552 \u20379 \u30340 \u36164 \u28304 :</strong>\
+                        <div class="flex flex-wrap gap-2">$\{resourcesHtml\}</div>\
+                    </div>\
+                `;\
+                listElement.appendChild(card);\
+            \});\
+        \}\
+\
+        // \uc0\u25628 \u32034 \u36807 \u28388 \u36923 \u36753 \
+        function filterAlumni() \{\
+            const inputElement = document.getElementById('search-input');\
+            if (!inputElement) return;\
+\
+            const input = inputElement.value.toLowerCase();\
+            const filteredData = ALUMNI_DATA.filter(alumnus => \{\
+                return (\
+                    alumnus.name.toLowerCase().includes(input) ||\
+                    alumnus.company.toLowerCase().includes(input) ||\
+                    alumnus.title.toLowerCase().includes(input)\
+                );\
+            \});\
+            renderAlumni(filteredData);\
+        \}\
+\
+        // ----------------------------------------------------\
+        // 2. \uc0\u36335 \u30001 \u21644 \u20132 \u20114 \u36923 \u36753 \
+        // ----------------------------------------------------\
+\
+        document.addEventListener('DOMContentLoaded', () => \{\
+            const pages = document.querySelectorAll('.page-content');\
+            const navLinks = document.querySelectorAll('.nav-link');\
+            const mobileMenu = document.getElementById('menu');\
+            const mobileMenuBtn = document.getElementById('menu-btn');\
+\
+            // --- Routing Logic ---\
+            function handleRouting() \{\
+                const hash = window.location.hash || '#/';\
+                let targetPageId = 'page-home'; // Default page ID\
+\
+                if (hash !== '#/') \{\
+                    const pageName = hash.substring(2);\
+                    if (document.getElementById('page-' + pageName)) \{\
+                        targetPageId = 'page-' + pageName;\
+                    \}\
+                \}\
+                \
+                // Show/Hide pages\
+                pages.forEach(page => \{\
+                    page.classList.toggle('hidden', page.id !== targetPageId);\
+                \});\
+\
+                // Update nav bar active state (Logic is complex to keep original styling)\
+                navLinks.forEach(link => \{\
+                    const linkHash = link.getAttribute('href').split('?')[0];\
+                    const hashTarget = hash.split('?')[0];\
+\
+                    const isActive = linkHash === hashTarget || (hashTarget === '#/' && linkHash === '#/');\
+                    \
+                    link.classList.toggle('active', isActive);\
+                    \
+                    if (link.closest('header') && !link.closest('#menu') && !link.classList.contains('border')) \{\
+                        link.classList.toggle('text-white', !isActive);\
+                    \}\
+                \});\
+                \
+                // Ensure Logo link styling is correct\
+                const logoLink = document.querySelector('header > nav > div > a.nav-link');\
+                if (logoLink) \{\
+                    logoLink.classList.remove('active');\
+                    logoLink.classList.add('text-white');\
+                \}\
+\
+                mobileMenu.classList.add('hidden');\
+                window.scrollTo(0, 0);\
+\
+                // **\uc0\u20851 \u38190 \u65306 \u22312 \u36827 \u20837 \u26657 \u21451 \u21517 \u24405 \u39029 \u38754 \u26102 \u28210 \u26579 \u25968 \u25454 **\
+                if (targetPageId === 'page-alumni-list') \{\
+                    renderAlumni(ALUMNI_DATA);\
+                \}\
+            \}\
+\
+            window.addEventListener('hashchange', handleRouting);\
+            handleRouting();\
+\
+            // Mobile menu toggle\
+            mobileMenuBtn.addEventListener('click', () => \{\
+                mobileMenu.classList.toggle('hidden');\
+            \});\
+\
+            // Close mobile menu on nav click\
+            navLinks.forEach(link => \{\
+                link.addEventListener('click', () => \{\
+                    if (link.closest('#menu')) \{\
+                        mobileMenu.classList.add('hidden');\
+                    \}\
+                \});\
+            \});\
+        \});\
+    </script>\
+\
+</body>\
+</html>\
+}
