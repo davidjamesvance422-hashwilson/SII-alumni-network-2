@@ -54,6 +54,7 @@
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#/" class="nav-link hover:text-sii-blue transition-colors">首页</a>
                 <a href="#/alumni-list" class="nav-link hover:text-sii-blue transition-colors">校友名录</a>
+                <a href="#/questionnaire" class="nav-link hover:text-sii-blue transition-colors">信息登记</a>
                 <a href="#/resources" class="nav-link hover:text-sii-blue transition-colors">资源中心</a>
                 <a href="#/events" class="nav-link hover:text-sii-blue transition-colors">校友活动</a>
                 <a href="#/register" class="nav-link border border-white rounded-full px-5 py-2 text-sm font-medium hover:bg-white hover:text-sii-navy transition-colors">
@@ -72,6 +73,7 @@
             <div class="flex flex-col items-center space-y-4 py-8">
                 <a href="#/" class="nav-link text-lg">首页</a>
                 <a href="#/alumni-list" class="nav-link text-lg">校友名录</a>
+                <a href="#/questionnaire" class="nav-link text-lg">信息登记</a>
                 <a href="#/resources" class="nav-link text-lg">资源中心</a>
                 <a href="#/events" class="nav-link text-lg">校友活动</a>
                 <a href="#/register" class="nav-link mt-4 bg-sii-blue text-white rounded-full px-8 py-3 font-medium transition-colors">
@@ -92,8 +94,8 @@
                     欢迎回到东北财经大学萨里国际学院校友网络。发现机会，拓展人脉，保持联系。
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#/register" class="bg-sii-navy text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 shadow-lg transition-all transform hover:-translate-y-1">
-                        立即加入 / 验证
+                    <a href="#/questionnaire" class="bg-sii-navy text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 shadow-lg transition-all transform hover:-translate-y-1">
+                        立即登记你的信息
                     </a>
                     <a href="#/alumni-list" class="text-sii-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-sii-blue/10 transition-all">
                         查看校友名录 &gt;
@@ -135,7 +137,7 @@
                             <p class="text-gray-600 mb-5">
                                 更新你的职业动态和联系方式，让母校的资源和昔日的同窗能主动找到你。
                             </p>
-                            <a href="#/register" class="text-sii-blue font-medium hover:underline">更新我的资料 &gt;</a>
+                            <a href="#/questionnaire" class="text-sii-blue font-medium hover:underline">更新我的资料 &gt;</a>
                         </div>
                     </div>
                 </div>
@@ -168,79 +170,87 @@
                     <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
                         仅需两分钟，登记你的信息，重新连接全球SII网络。
                     </p>
-                    <a href="#/register" class="bg-white text-sii-navy px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 shadow-lg transition-all transform hover:-translate-y-1">
+                    <a href="#/questionnaire" class="bg-white text-sii-navy px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 shadow-lg transition-all transform hover:-translate-y-1">
                         立即登记你的信息
                     </a>
                 </div>
             </section>
         </div>
 
-        <div id="page-resources" class="page-content hidden">
-            <div class="bg-white py-24 md:py-32">
+        <div id="page-questionnaire" class="page-content hidden">
+            <div class="bg-sii-gray py-24 md:py-32 min-h-screen">
                 <div class="container mx-auto px-6">
-                    <h1 class="text-5xl font-extrabold text-sii-navy mb-4">职业发展中心</h1>
-                    <p class="text-xl text-gray-600 mb-12">浏览由全球萨里校友发布的独家机会。</p>
+                    <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+                        <h1 class="text-4xl font-extrabold text-sii-navy mb-4 text-center">校友信息登记问卷</h1>
+                        <p class="text-lg text-gray-600 mb-8 text-center">
+                            请填写以下信息，以确保您的校友档案及时更新，并能被其他校友检索。
+                        </p>
 
-                    <div class="mb-10 flex flex-wrap gap-4 items-center">
-                        <span class="font-medium text-gray-700">筛选:</span>
-                        <button class="bg-sii-blue text-white px-4 py-2 rounded-full text-sm">全部</button>
-                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">实习</button>
-                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">全职</button>
-                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">深圳</button>
-                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">上海</button>
-                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">金融</button>
-                        <a href="#" class="ml-auto bg-sii-navy text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90">
-                            + 发布一个新机会
-                        </a>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">数据分析实习生</h3>
-                            <p class="text-lg font-medium text-gray-700 mb-3">字节跳动</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs font-medium bg-sii-blue/10 text-sii-blue px-3 py-1 rounded-full">实习</span>
-                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">远程</span>
-                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">深圳</span>
-                            </div>
-                            <p class="text-sm text-gray-500 mb-5">发布于: 3天前</p>
-                            <p class="text-sm text-gray-600 mb-5">
-                                <span class="font-medium">来源:</span> 李四 (2019级 校友)
-                            </p>
-                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
-                                查看详情并联系
-                            </a>
+                        <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg mb-6 text-sm">
+                            **重要提示：** 这是一个**前端演示表单**。为了实际保存数据，您需要将 `action` 属性指向一个真实的后端服务（如 Google Forms, Microsoft Forms 或自定义 API）。
                         </div>
                         
-                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">金融管培生 (全职)</h3>
-                            <p class="text-lg font-medium text-gray-700 mb-3">
-                                [某知名银行]
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full">全职</span>
-                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">上海</span>
+                        <form onsubmit="alert('表单提交成功！但数据未实际保存，请部署后端服务。'); return false;">
+                            
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">姓名 <span class="text-red-500">*</span></label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-sii-blue focus:ring-sii-blue" placeholder="请填写您的真实姓名">
                             </div>
-                            <p class="text-sm text-gray-500 mb-5">发布于: 1天前</p>
-                            <p class="text-sm text-gray-600 mb-5">
-                                <span class="font-medium">来源:</span> 王五 (2017级 校友)
-                            </p>
-                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
-                                查看详情并联系
-                            </a>
-                        </div>
 
-                        <div class="bg-sii-gray border border-dashed border-gray-300 p-6 rounded-2xl flex items-center justify-center text-center text-gray-500 hover:border-sii-blue hover:text-sii-blue transition-colors">
-                            <div>
-                                <h3 class="text-lg font-medium">更多机会</h3>
-                                <p class="text-sm">正在等待校友发布...</p>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">常用电子邮箱 <span class="text-red-500">*</span></label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-sii-blue focus:ring-sii-blue" placeholder="用于接收校友活动通知">
                             </div>
-                        </div>
+
+                            <div class="mb-4">
+                                <label for="major" class="block text-gray-700 font-medium mb-2">毕业专业/入学年份</label>
+                                <input type="text" id="major" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-sii-blue focus:ring-sii-blue" placeholder="如：金融学 / 2018级">
+                            </div>
+
+                            <div class="mb-4 grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="company" class="block text-gray-700 font-medium mb-2">当前任职公司</label>
+                                    <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-sii-blue focus:ring-sii-blue" placeholder="如：腾讯、普华永道">
+                                </div>
+                                <div>
+                                    <label for="position" class="block text-gray-700 font-medium mb-2">当前岗位/职位</label>
+                                    <input type="text" id="position" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-sii-blue focus:ring-sii-blue" placeholder="如：产品经理、税务顾问">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-3">我能为校友提供的资源 (可多选)</label>
+                                <div class="flex flex-wrap gap-3">
+                                    <label class="flex items-center space-x-2 bg-sii-gray p-3 rounded-lg cursor-pointer hover:bg-gray-200 transition-colors">
+                                        <input type="checkbox" name="resource" value="内推机会" class="form-checkbox text-sii-blue">
+                                        <span>内推机会</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 bg-sii-gray p-3 rounded-lg cursor-pointer hover:bg-gray-200 transition-colors">
+                                        <input type="checkbox" name="resource" value="行业咨询" class="form-checkbox text-sii-blue">
+                                        <span>行业咨询</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 bg-sii-gray p-3 rounded-lg cursor-pointer hover:bg-gray-200 transition-colors">
+                                        <input type="checkbox" name="resource" value="创业指导" class="form-checkbox text-sii-blue">
+                                        <span>创业指导</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 bg-sii-gray p-3 rounded-lg cursor-pointer hover:bg-gray-200 transition-colors">
+                                        <input type="checkbox" name="resource" value="海外留学经验" class="form-checkbox text-sii-blue">
+                                        <span>海外留学经验</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full bg-sii-blue text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 shadow-lg transition-all transform hover:-translate-y-1 mt-6">
+                                提交信息并加入名录
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        
+
+
         <div id="page-register" class="page-content hidden">
             <div class="bg-sii-gray py-24 md:py-32 min-h-screen">
                 <div class="container mx-auto px-6">
@@ -286,6 +296,67 @@
         </div>
 
 
+        <div id="page-resources" class="page-content hidden">
+            <div class="bg-white py-24 md:py-32">
+                <div class="container mx-auto px-6">
+                    <h1 class="text-5xl font-extrabold text-sii-navy mb-4">职业发展中心</h1>
+                    <p class="text-xl text-gray-600 mb-12">浏览由全球萨里校友发布的独家机会。</p>
+                    <div class="mb-10 flex flex-wrap gap-4 items-center">
+                        <span class="font-medium text-gray-700">筛选:</span>
+                        <button class="bg-sii-blue text-white px-4 py-2 rounded-full text-sm">全部</button>
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">实习</button>
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">全职</button>
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">深圳</button>
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">上海</button>
+                        <button class="bg-sii-gray text-sii-text px-4 py-2 rounded-full text-sm hover:bg-gray-300">金融</button>
+                        <a href="#" class="ml-auto bg-sii-navy text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90">
+                            + 发布一个新机会
+                        </a>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">数据分析实习生</h3>
+                            <p class="text-lg font-medium text-gray-700 mb-3">字节跳动</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-sii-blue/10 text-sii-blue px-3 py-1 rounded-full">实习</span>
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">远程</span>
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">深圳</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-5">发布于: 3天前</p>
+                            <p class="text-sm text-gray-600 mb-5">
+                                <span class="font-medium">来源:</span> 李四 (2019级 校友)
+                            </p>
+                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
+                                查看详情并联系
+                            </a>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-2xl font-semibold mb-2 text-sii-navy">金融管培生 (全职)</h3>
+                            <p class="text-lg font-medium text-gray-700 mb-3">
+                                [某知名银行]
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full">全职</span>
+                                <span class="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full">上海</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-5">发布于: 1天前</p>
+                            <p class="text-sm text-gray-600 mb-5">
+                                <span class="font-medium">来源:</span> 王五 (2017级 校友)
+                            </p>
+                            <a href="#" class="bg-sii-blue text-white w-full text-center py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
+                                查看详情并联系
+                            </a>
+                        </div>
+                        <div class="bg-sii-gray border border-dashed border-gray-300 p-6 rounded-2xl flex items-center justify-center text-center text-gray-500 hover:border-sii-blue hover:text-sii-blue transition-colors">
+                            <div>
+                                <h3 class="text-lg font-medium">更多机会</h3>
+                                <p class="text-sm">正在等待校友发布...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="page-events" class="page-content hidden">
              <div class="bg-white py-24 md:py-32 text-center">
                 <h1 class="text-4xl font-bold text-sii-navy">校友活动</h1>
@@ -351,7 +422,7 @@
         ];
 
         // 口令验证逻辑
-        // 🚨 已更新口令为 Dufe
+        // 🚨 密钥/口令： Dufe
         const CORRECT_PASSPHRASE = "Dufe"; 
         const ALUMNUS_PAGE_HASH = "#/alumni-list"; 
 
@@ -445,7 +516,7 @@
                     page.classList.toggle('hidden', page.id !== targetPageId);
                 });
 
-                // Update nav bar active state (Logic is complex to keep original styling)
+                // Update nav bar active state
                 navLinks.forEach(link => {
                     const linkHash = link.getAttribute('href').split('?')[0];
                     const hashTarget = hash.split('?')[0];
